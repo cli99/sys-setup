@@ -7,6 +7,9 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 # install tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+
+mkdir -p ~/.local/bin
+
 # install fasd
 cd /tmp
 git clone git@github.com:clvv/fasd.git
@@ -29,7 +32,6 @@ cd ~/.local
 git clone https://github.com/so-fancy/diff-so-fancy.git
 
 # install starship
-mkdir -p ~/.local/bin
 curl -fsSL https://starship.rs/install.sh | bash -s -- -b=$HOME/.local/bin
 
 # install pyenv
