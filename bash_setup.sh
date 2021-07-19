@@ -29,7 +29,8 @@ cd ~/.local
 git clone https://github.com/so-fancy/diff-so-fancy.git
 
 # install starship
-curl -fsSL https://starship.rs/install.sh | bash -s -- -b=~/.local/bin
+mkdir -p ~/.local/bin
+curl -fsSL https://starship.rs/install.sh | bash -s -- -b=$HOME/.local/bin
 
 # install pyenv
 curl https://pyenv.run | bash
